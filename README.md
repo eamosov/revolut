@@ -35,9 +35,9 @@ or with in-memory database:
 mvn exec:java  
 
 The program starts HTTP server at port 8080 and provides REST interface:  
-/create?id=${id}&amp;balance=${balance}  
-/history?id=${id}  
-/balance?id=${id}  
-/transfer?src=${src}&amp;dst=${dst}&amp;amount=${amount}  
+http://localhost:8080/create?id=${id}&amp;balance=${balance}  
+http://localhost:8080/history?id=${id}  
+http://localhost:8080/balance?id=${id}  
+http://localhost:8080/transfer?src=${src}&amp;dst=${dst}&amp;amount=${amount}  
 
 
