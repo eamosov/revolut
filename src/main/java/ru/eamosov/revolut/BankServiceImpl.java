@@ -155,6 +155,7 @@ public class BankServiceImpl implements BankService {
 
     }
 
+    //TODO Actually transfer algorithm may be improved and splitted: one database transaction for outbound and one for inbound. It will help build partitioning without double-phase commit but needs some complications.
     @Override
     public TransferResult transfer(UUID src, UUID dst, long amount) throws SQLException {
 
