@@ -41,9 +41,13 @@ http://localhost:8080/balance?id=${id}
 http://localhost:8080/transfer?src=${src}&dst=${dst}&amount=${amount}  
 
 Example:  
+1) create first account:  
 http://localhost:8080/create?id=82e20afe-8426-44d1-aa4e-f0f65b0214c6&balance=100  
+2) create second account:  
 http://localhost:8080/create?id=8de53943-c4b4-43d6-8811-cb8a1eaee157&balance=100  
-http://localhost:8080/transfer?src=82e20afe-8426-44d1-aa4e-f0f65b0214c6&dst=8de53943-c4b4-43d6-8811-cb8a1eaee157&amount=50  
+3) transfer 50 from first to second  
+http://localhost:8080/transfer?src=82e20afe-8426-44d1-aa4e-f0f65b0214c6&dst=8de53943-c4b4-43d6-8811-cb8a1eaee157&amount=50
+4) get history:  
 http://localhost:8080/history?id=82e20afe-8426-44d1-aa4e-f0f65b0214c6  
 http://localhost:8080/history?id=8de53943-c4b4-43d6-8811-cb8a1eaee157  
 
