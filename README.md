@@ -22,7 +22,7 @@ This architecture is great because it is reliable, provides immutable transactio
 
 In addition, this solution required very small dependencies. 
  
-Look API in [ru.eamosov.revolut.api.BankService](src/main/java/ru/eamosov/revolut/api/BankService.java) or [docs/index.html](docs/index.html)
+Look API in [ru.eamosov.revolut.api.BankService](src/main/java/ru/eamosov/revolut/api/BankService.java) or [docs/index.html](https://eamosov.github.io/revolut/)
 
 Building and testing:   
 mvn clean install
