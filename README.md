@@ -29,8 +29,12 @@ mvn clean install
 
 Running from command line:  
 mvn exec:java -D 'PG_URI=jdbc:postgresql://localhost/revolut?user=revolut'  
-Empty database and user must be created before running. The program starts HTTP server at port 8080 and provides REST interface:
+Empty database and user must be created before running.
 
+or with in-memory database:  
+mvn exec:java  
+
+The program starts HTTP server at port 8080 and provides REST interface:  
 /create?id=${id}&amp;balance=${balance}  
 /history?id=${id}  
 /balance?id=${id}  
